@@ -1,0 +1,7 @@
+StudentID,Age,Gender,MathScore,ScienceScore,Attendance
+101,18,Male,78,88,92
+102,17,Female,85,91,95
+103,18,Female,,84,88
+104,,Male,67,72,80
+105,17,Female,90,,96
+106,18,,82,89,
