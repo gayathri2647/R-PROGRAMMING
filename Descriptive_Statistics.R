@@ -23,8 +23,7 @@ median(data$Attendance)
 
 #Mode (custom function because R has no built-in mode)
 mode_func <- function(x) {
-  ux <- unique(x)
-  ux[which.max(tabulate(match(x, ux)))]
+  names(sort(table(x), decreasing = TRUE))[1]
 }
 mode_func(data$Gender)
 
