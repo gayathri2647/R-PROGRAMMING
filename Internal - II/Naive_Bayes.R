@@ -9,7 +9,7 @@ data <- data.frame(
 )
 
 # Change the Gender into factor
-data$Gender <- as.factor(data$Gender)
+#data$Gender <- as.factor(data$Gender)
 
 # Install packages for NaiveBayes
 install.packages("e1071")   # run once
@@ -17,16 +17,14 @@ library(e1071)
 
 # Building the model
 nb_model <- naiveBayes(
-  Gender ~ Age + MathScore + ScienceScore + Attendance,
+  Attendance ~  MathScore + ScienceScore,
   data = data
 );
 
 # Predict with sample data
 new_student <- data.frame(
-  Age = 18,
   MathScore = 90,
-  ScienceScore = 93,
-  Attendance = 91
+  ScienceScore = 93
 );
 
 predict(nb_model, new_student);
