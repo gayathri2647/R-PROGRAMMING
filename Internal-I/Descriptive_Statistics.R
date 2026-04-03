@@ -22,10 +22,8 @@ median(data$ScienceScore)
 median(data$Attendance)
 
 #Mode (custom function because R has no built-in mode)
-mode_func <- function(x) {
-  names(sort(table(x), decreasing = TRUE))[1]
-}
-mode_func(data$Gender)
+mode_func <- names(sort(table(data$Gender), decreasing = TRUE))[1]
+mode_func
 
 #Minimum & Maximum
 min(data$MathScore)
