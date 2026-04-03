@@ -25,8 +25,7 @@ arr[3]
 # 5. Data Frame (table-like, columns can differ)
 df <- data.frame(
   name = c("A", "B", "C"),
-  age = c(21, 22, 23)
-)
+  age = c(21, 22, 23))
 print(df)
 print(class(df))
 df[1,2]
