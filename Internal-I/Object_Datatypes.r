@@ -35,3 +35,33 @@ fac <- factor(c("Male", "Female", "Male"))
 print(fac)
 print(class(fac))
 fac[3]
+
+# 7. Numeric
+num_value <- 10.5
+print(num_value)
+print(class(num_value))
+
+# 8. Integer
+int_value <- 20L
+print(int_value)
+print(class(int_value))
+
+# 9. Character
+char_value <- "Hello R"
+print(char_value)
+print(class(char_value))
+
+# 10. Logical
+log_value <- TRUE
+print(log_value)
+print(class(log_value))
+
+# 11. Complex
+complex_value <- 3 + 4i
+print(complex_value)
+print(class(complex_value))
+
+# 12. Raw
+raw_value <- charToRaw("R")
+print(raw_value)
+print(class(raw_value))
